@@ -49,6 +49,17 @@ public class RekapNilai {
             jumlah++;
 
         } while (true);
+        System.out.println();
+        System.out.println("Nilai Sah   : " + jumlah);
+
+        if (jumlah > 0) {
+            double rata = total / jumlah;
+            String status = rata >= 60 ? "LULUS" : "Tidak Lulus";
+
+            System.out.println("Rata-rata   : " + String.format("%.2f", rata));
+            System.out.println("Status      : " + status);
+        }
+
 
         sc.close();
     }
